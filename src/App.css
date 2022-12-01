@@ -1,0 +1,590 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+.container {
+  width: 1400px;
+  margin: 0 auto;
+}
+
+marquee {
+  padding: 10px 0;
+  color: #F4F4F4;
+  background: #384685;
+  font-size: 20px;
+  cursor: context-menu;
+}
+
+header {
+  width: 100%;
+  height: 70px;
+}
+header .container {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .container form {
+  display: flex;
+  gap: 40px;
+}
+header .container form input {
+  padding: 5px 8px;
+  border-radius: 7px;
+  border: 1px #384685 solid;
+  outline-color: rgb(255, 233, 196);
+}
+header .container form .icons {
+  display: flex;
+  gap: 20px;
+}
+header .container form .icons i {
+  font-size: 25px;
+  color: #384685;
+}
+
+nav {
+  width: 100%;
+  padding: 10px 0;
+  background: #A8D1E7;
+  position: relative;
+  transition: all linear 0.4s;
+}
+nav .container {
+  height: 100%;
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+nav .container .box {
+  position: absolute;
+  height: 30px;
+  top: 10px;
+  left: 5px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 20px;
+  display: none;
+}
+nav .container .box h3 {
+  color: #384685;
+}
+nav .container .box i {
+  font-size: 30px;
+  color: #384685;
+  cursor: pointer;
+}
+nav .container a {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 700;
+  color: #F4F4F4;
+  padding: 7px;
+  transition: all linear 0.2s;
+  border-radius: 4px;
+  background: #384685;
+}
+nav .container a:hover {
+  background: rgba(56, 70, 133, 0.7176470588);
+  color: #F4F4F4;
+}
+
+.benefits {
+  width: 100%;
+  padding: 30px 0;
+}
+.benefits .container .top h1 {
+  font-size: 26px;
+}
+.benefits .container .bottom {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px 0;
+}
+.benefits .container .bottom div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  border-radius: 5px;
+  width: 320px;
+  height: 70px;
+  background: #F4F4F4;
+  transition: all linear 0.3s;
+  cursor: default;
+}
+.benefits .container .bottom div:hover {
+  background: #A8D1E7;
+}
+.benefits .container .bottom div i {
+  font-size: 24px;
+  transition: all linear 0.3s;
+  color: #384685;
+}
+
+.catalog {
+  width: 100%;
+}
+.catalog .container .top h1 {
+  font-size: 26px;
+}
+.catalog .container .bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin: 20px 0;
+}
+.catalog .container .bottom .card {
+  width: 330px;
+  height: 200px;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.catalog .container .bottom .card:hover img {
+  transform: scale(1.05);
+}
+.catalog .container .bottom .card a {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: #384685;
+  color: #F4F4F4;
+  padding: 5px;
+  border-radius: 4px;
+  text-decoration: none;
+}
+.catalog .container .bottom .card img {
+  width: 100%;
+  height: 100%;
+  transition: all linear 0.2s;
+}
+
+.famous {
+  width: 100%;
+}
+.famous .container .top {
+  padding: 80px 0;
+}
+.famous .container .top h1 {
+  font-size: 26px;
+}
+.famous .container .bottom {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.famous .container .bottom a {
+  color: #384685;
+  border: 2px #384685 solid;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: all linear 0.2s;
+  border-radius: 5px;
+  font-size: 13px;
+  text-decoration: none;
+  font-weight: 500;
+}
+.famous .container .bottom a:hover {
+  background: #384685;
+  color: #F4F4F4;
+}
+
+.topsale {
+  width: 100%;
+}
+.topsale .container .top h1 img {
+  width: 40px;
+}
+.topsale .container .bottom {
+  padding: 40px 0;
+  display: flex;
+  justify-content: center;
+}
+.topsale .container .bottom .card {
+  width: 310px;
+  height: 410px;
+  border: 2px solid #E2E2E2;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.topsale .container .bottom .card:hover img {
+  transform: scale(1.05);
+}
+.topsale .container .bottom .card .top1 {
+  height: 55%;
+  width: 100%;
+  overflow: hidden;
+}
+.topsale .container .bottom .card .top1 img {
+  width: 100%;
+  height: 100%;
+  transition: all linear 0.2s;
+}
+.topsale .container .bottom .card .bottom1 {
+  height: 45%;
+  width: 100%;
+  padding: 15px;
+}
+.topsale .container .bottom .card .bottom1 h3 {
+  color: #222a48;
+  font-weight: 600;
+  border-top: 2px solid rgb(176, 176, 176);
+  border-bottom: 2px solid rgb(174, 174, 174);
+  padding: 10px 0;
+  margin: 5px 0;
+}
+.topsale .container .bottom .card .bottom1 h3 span {
+  color: grey;
+  text-decoration: line-through;
+  margin-right: 15px;
+  font-weight: 300;
+}
+.topsale .container .bottom .card .bottom1 .box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.topsale .container .bottom .card .bottom1 .box img {
+  width: 50px;
+  cursor: pointer;
+}
+.topsale .container .bottom .card .bottom1 .box a {
+  text-decoration: none;
+  padding: 5px 15px;
+  color: #222a48;
+  border: 2px solid #384685;
+  border-radius: 5px;
+  font-weight: 500;
+  transition: all linear 0.2s;
+}
+.topsale .container .bottom .card .bottom1 .box a:hover {
+  color: #E2E2E2;
+  background: #384685;
+}
+
+.works {
+  width: 100%;
+  padding: 40px 0;
+}
+.works .container .bottom {
+  padding: 40px 0;
+}
+.works .container .bottom .two {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+.works .container .bottom .two div {
+  width: 49%;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.works .container .bottom .two img {
+  width: 100%;
+}
+.works .container .bottom .two h3 {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  padding: 7px;
+  font-size: 14px;
+  color: #E2E2E2;
+  background: #384685;
+  border-radius: 3px;
+}
+.works .container .bottom .three {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.works .container .bottom .three div {
+  width: 32%;
+  height: 300px;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top: 20px;
+}
+.works .container .bottom .three img {
+  width: 100%;
+  height: 100%;
+}
+.works .container .bottom .three h3 {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  padding: 7px;
+  font-size: 14px;
+  color: #E2E2E2;
+  background: #384685;
+  border-radius: 3px;
+}
+
+.location {
+  width: 100%;
+  padding: 40px 0;
+}
+.location .container {
+  display: flex;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.location .container div {
+  height: 400px;
+}
+.location .container .contact {
+  width: 45%;
+  background: linear-gradient(rgba(0, 0, 0, 0.701), rgba(0, 0, 0, 0.71)), url("/public/img/kitchen.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-direction: column;
+  position: relative;
+}
+.location .container .contact h3 {
+  color: #E2E2E2;
+  font-size: 23px;
+  font-weight: 400;
+}
+.location .container .contact h4 {
+  color: #E2E2E2;
+  font-size: 20px;
+}
+.location .container .contact h5 {
+  color: #E2E2E2;
+  font-size: 16px;
+  font-weight: 400;
+}
+.location .container .contact a {
+  color: #F4F4F4;
+  background: #384685;
+  padding: 8px 10px;
+  position: absolute;
+  bottom: 60px;
+  text-decoration: none;
+  border-radius: 3px;
+  left: 30px;
+  transition: all ease 0.3s;
+}
+.location .container .contact a:hover {
+  background: #222a48;
+}
+.location .container .map {
+  width: 55%;
+  background: url("/public/img/map.png");
+}
+
+footer {
+  width: 100%;
+  padding: 50px 0;
+  background: #384685;
+}
+footer .container h1 {
+  color: #A8D1E7;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 400;
+  margin: 10px 0;
+}
+footer .container h2 {
+  color: #A8D1E7;
+  text-align: center;
+  font-size: 19px;
+  font-weight: 300;
+}
+footer .container .box {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px 0;
+}
+footer .container .box i {
+  color: #A8D1E7;
+  font-size: 35px;
+}
+
+.xon,
+.javon,
+.yotoqxona,
+.guest,
+.kitchen,
+.kirish,
+.kid {
+  width: 100%;
+}
+.xon .container,
+.javon .container,
+.yotoqxona .container,
+.guest .container,
+.kitchen .container,
+.kirish .container,
+.kid .container {
+  padding: 20px;
+}
+.xon .container .top h3,
+.javon .container .top h3,
+.yotoqxona .container .top h3,
+.guest .container .top h3,
+.kitchen .container .top h3,
+.kirish .container .top h3,
+.kid .container .top h3 {
+  color: #E2E2E2;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 24px;
+  font-weight: 500;
+  background: orangered;
+  display: inline-block;
+}
+.xon .container .bottom,
+.javon .container .bottom,
+.yotoqxona .container .bottom,
+.guest .container .bottom,
+.kitchen .container .bottom,
+.kirish .container .bottom,
+.kid .container .bottom {
+  padding: 30px 0;
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+.xon .container .bottom .card,
+.javon .container .bottom .card,
+.yotoqxona .container .bottom .card,
+.guest .container .bottom .card,
+.kitchen .container .bottom .card,
+.kirish .container .bottom .card,
+.kid .container .bottom .card {
+  width: 25%;
+  border-radius: 10px;
+  border: 2px #E2E2E2 solid;
+}
+.xon .container .bottom .card .tepa,
+.javon .container .bottom .card .tepa,
+.yotoqxona .container .bottom .card .tepa,
+.guest .container .bottom .card .tepa,
+.kitchen .container .bottom .card .tepa,
+.kirish .container .bottom .card .tepa,
+.kid .container .bottom .card .tepa {
+  height: 60%;
+  width: 100%;
+}
+.xon .container .bottom .card .tepa img,
+.javon .container .bottom .card .tepa img,
+.yotoqxona .container .bottom .card .tepa img,
+.guest .container .bottom .card .tepa img,
+.kitchen .container .bottom .card .tepa img,
+.kirish .container .bottom .card .tepa img,
+.kid .container .bottom .card .tepa img {
+  width: 100%;
+  height: 100%;
+}
+.xon .container .bottom .card .past,
+.javon .container .bottom .card .past,
+.yotoqxona .container .bottom .card .past,
+.guest .container .bottom .card .past,
+.kitchen .container .bottom .card .past,
+.kirish .container .bottom .card .past,
+.kid .container .bottom .card .past {
+  height: 40%;
+  width: 100%;
+  padding: 10px;
+}
+.xon .container .bottom .card .past p,
+.javon .container .bottom .card .past p,
+.yotoqxona .container .bottom .card .past p,
+.guest .container .bottom .card .past p,
+.kitchen .container .bottom .card .past p,
+.kirish .container .bottom .card .past p,
+.kid .container .bottom .card .past p {
+  color: #222a48;
+  font-weight: 400;
+}
+.xon .container .bottom .card .past h3,
+.javon .container .bottom .card .past h3,
+.yotoqxona .container .bottom .card .past h3,
+.guest .container .bottom .card .past h3,
+.kitchen .container .bottom .card .past h3,
+.kirish .container .bottom .card .past h3,
+.kid .container .bottom .card .past h3 {
+  color: #222a48;
+  font-weight: 500;
+  margin: 20px 0;
+}
+.xon .container .bottom .card .past h3 span,
+.javon .container .bottom .card .past h3 span,
+.yotoqxona .container .bottom .card .past h3 span,
+.guest .container .bottom .card .past h3 span,
+.kitchen .container .bottom .card .past h3 span,
+.kirish .container .bottom .card .past h3 span,
+.kid .container .bottom .card .past h3 span {
+  color: #8a8a8a;
+  font-weight: 400;
+  text-decoration: line-through;
+  margin-right: 20px;
+}
+.xon .container .bottom .card .past .box,
+.javon .container .bottom .card .past .box,
+.yotoqxona .container .bottom .card .past .box,
+.guest .container .bottom .card .past .box,
+.kitchen .container .bottom .card .past .box,
+.kirish .container .bottom .card .past .box,
+.kid .container .bottom .card .past .box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.xon .container .bottom .card .past .box a,
+.javon .container .bottom .card .past .box a,
+.yotoqxona .container .bottom .card .past .box a,
+.guest .container .bottom .card .past .box a,
+.kitchen .container .bottom .card .past .box a,
+.kirish .container .bottom .card .past .box a,
+.kid .container .bottom .card .past .box a {
+  text-decoration: none;
+  padding: 5px 10px;
+  background: #384685;
+  color: #F4F4F4;
+  border-radius: 3px;
+}
+.xon .container .bottom .card .past .box i,
+.javon .container .bottom .card .past .box i,
+.yotoqxona .container .bottom .card .past .box i,
+.guest .container .bottom .card .past .box i,
+.kitchen .container .bottom .card .past .box i,
+.kirish .container .bottom .card .past .box i,
+.kid .container .bottom .card .past .box i {
+  color: crimson;
+  font-size: 40px;
+  cursor: pointer;
+  transition: all ease-in-out 0.2s;
+}
+.xon .container .bottom .card .past .box i:hover,
+.javon .container .bottom .card .past .box i:hover,
+.yotoqxona .container .bottom .card .past .box i:hover,
+.guest .container .bottom .card .past .box i:hover,
+.kitchen .container .bottom .card .past .box i:hover,
+.kirish .container .bottom .card .past .box i:hover,
+.kid .container .bottom .card .past .box i:hover {
+  color: #384685;
+}/*# sourceMappingURL=App.css.map */
