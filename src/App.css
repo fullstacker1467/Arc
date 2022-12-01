@@ -139,7 +139,7 @@ nav .container a:hover {
 }
 .catalog .container .bottom {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   gap: 20px;
