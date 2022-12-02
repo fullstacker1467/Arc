@@ -20,7 +20,7 @@ function App() {
       <Navbar />
       <marquee>Яркий неповторимый дизайн, высокое качество мебели и ее функциональность по доступной цене. Наша компания осуществляет бесплатную доставку в пределах г.Ташкента</marquee>
       <Routes>
-        <Route path='/'  element={<Home />}/>
+        <Route path='/'  element={<Home />}/> 
         <Route path='/kitchen'  element={<Kitchen />}/>
         <Route path='/guest'  element={<Guest />}/>
         <Route path='/bad'  element={<Bad />}/>
