@@ -48,7 +48,6 @@
 .kirish .container .bottom .card,
 .kid .container .bottom .card {
     width: 400px;
-    height: 500px;
   }
 }
 @media screen and (max-width: 1090px) {

@@ -1,10 +1,11 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 function Header() {
   return (
     <header>
       <div className="container">
-        <img src="/img/logo.png" className="logo" />
+        <Link to="/"><img src="/img/logo.png" className="logo" /></Link>
         <form>
           <input type="search" placeholder='Поиск' />
           <div className="icons">

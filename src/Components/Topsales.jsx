@@ -18,7 +18,7 @@ function Topsales() {
                         <h3><span>7159 руб  </span>   5017 руб</h3>
                         <div className='box'>
                         <Link>КУПИТЬ</Link>
-                        <img src="/img/heart.gif" />
+                        <i class="fa-solid fa-heart-circle-plus"></i>
                         </div>
                     </div>
                 </div>
@@ -31,7 +31,7 @@ function Topsales() {
                         <h3><span>8659 руб  </span>   8067 руб</h3>
                         <div className='box'>
                         <Link>КУПИТЬ</Link>
-                        <img src="/img/heart.gif" />
+                        <i class="fa-solid fa-heart-circle-plus"></i>
                         </div>
                     </div>
                 </div>
@@ -44,7 +44,7 @@ function Topsales() {
                         <h3><span>5159 руб  </span>   4597 руб</h3>
                         <div className='box'>
                         <Link>КУПИТЬ</Link>
-                        <img src="/img/heart.gif" />
+                        <i class="fa-solid fa-heart-circle-plus"></i>
                         </div>
                     </div>
                 </div>
@@ -57,7 +57,7 @@ function Topsales() {
                         <h3><span>18159 руб  </span>   13017 руб</h3>
                         <div className='box'>
                         <Link>КУПИТЬ</Link>
-                        <img src="/img/heart.gif" />
+                        <i class="fa-solid fa-heart-circle-plus"></i>
                         </div>
                     </div>
                 </div>
